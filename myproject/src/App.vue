@@ -3,23 +3,23 @@
 <template>
   <div id="app">
     
-    <header>
+    <!--<header>
       <div><span class="iconfont icon-dizhi"></span>{{city}}</div>
       <div>{{tit}}</div>
       <div><p><span class="iconfont icon-sousuo"></span></p></div>  
-    </header>
+    </header>         -->
     <section>
       <router-view @toparent="getdata"></router-view>
       
     </section>
-    <footer>
+    <!--<footer>
         <router-link to="./home" tag="div"><div class="shou"><span class="iconfont icon-shouye"></span>首页</div></router-link>
         <router-link to="./dian" tag="div"><div class="shou"><span class="iconfont icon-field"></span>店家</div></router-link>
         <router-link to="./shequ" tag="div"><div class="shou"><span class="iconfont icon-wujiaoxing"></span>社区</div></router-link>
         <router-link to="./ying" tag="div"><div class="shou"><span class="iconfont icon-xin2"></span>营养师</div></router-link>
         <router-link to="./mine" tag="div"><div class="shou"><span class="iconfont icon-wode"></span>我的</div></router-link>
          
-    </footer>
+    </footer>-->
   </div>
 </template>
 
