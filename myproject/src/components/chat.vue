@@ -29,9 +29,6 @@
 		methods:{
 			
 		},
-		mounted(){
-			
-		}
 	}
 </script>
 
