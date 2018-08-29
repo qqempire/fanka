@@ -23,9 +23,12 @@
 		name:"Chat",
 		data:function(){
 			return{
-				str:"与  二琪儿   聊天中"
+				str:"与  二琪儿   聊天中",
 			}
-		}
+		},
+		methods:{
+			
+		},
 	}
 </script>
 
