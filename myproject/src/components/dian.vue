@@ -104,6 +104,10 @@
 </template>
   
   <script>
+  	
+  	import $ from 'jquery'
+	import axios from 'axios'
+  	
   export default {
     name: 'Dian',
     data(){
@@ -125,7 +129,13 @@
     },
     mounted() {
       this.$emit("toparent",this.str)
-      
+      var _this = this;
+      axios({
+      	  url:'http://jx.xuzhixiang.top/ap/api/productlist.php'
+      })
+      .then(function(data){
+      	
+      })
 
 
     },

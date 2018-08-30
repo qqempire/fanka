@@ -31,6 +31,7 @@
 		 	<img src="../../static/fish.png" style="margin-top: 20px;"/>
 		
 				<h3>其他</h3>
+				<p>{{detail}}</p>
 			    <ul>
 			    	<li>
 			    		三元菜品<span>（8份）</span>
@@ -75,6 +76,7 @@
 
 <script>
 	import $ from 'jquery'
+	import axios from 'axios'
 	
 	import {mapGetters,mapActions} from 'vuex';
 	
@@ -86,12 +88,22 @@
 		data(){
 			return{
 				str:'菜品详情',
-				msg:''
+				msg:'',
+			    detail:''
 				
 			}
 		},
 		mounted(){
             this.$emit("toparent",this.str)
+			var _this=this;
+            
+            axios({
+            	url:'http://jx.xuzhixiang.top/ap/api/detail.php' ,
+            	params:{id:_this.$route.params.id}
+            })
+            .then(function(data){
+            	_this.detail= data.data
+            })
         }
         
 			
