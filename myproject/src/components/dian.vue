@@ -64,8 +64,8 @@
             <div style="display: none;">
                 <div id="shilei">
                     <ul>
-                       <li><img src="static/shi.jpg"></li>
-                       <li><img src="static/shi.jpg"></li>
+ <li ><router-link to='/fooddetail'><img src="static/shi.jpg"></router-link> </li>      
+<li><router-link to='/fooddetail'><img src="static/shi.jpg"></router-link></li>
                     </ul>
                     <ul>
                       <li><img src="static/shi.jpg"></li>
@@ -97,20 +97,7 @@
                 <img src="static/ditu.jpg">
             </div>
          </div>
-      
-  
-
-
-
-         
-         
-
-
-
-
-
-
-
+ 
 
 
     </div>
@@ -147,6 +134,7 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
+  	router-link{margin: 0;padding: 0;}
     #dian{padding: 0 5px}
     #leader{width: 100%;height: 40px;display: flex;justify-content: space-between;position: fixed;top:45px;left: 0;z-index: 9999;}
     #leader>div{width: 25%;height:40px;background: #fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow: 0px 0px 5px #888888;text-align: center;line-height: 40px;font-weight: bold}
@@ -215,7 +203,7 @@ div.content1>div:nth-of-type(4) {
 /* 第三个页面 */
 #shanshi{min-height: 160px;height: auto!important;margin-top: 5px;}
 #shanshi ul{width: 100%;height: 160px;;display: flex;justify-content: space-between;margin-top: 5px;}
-#shanshi ul li{height: 160px;width: 32%;background: orange;border-radius: 10px}
+#shanshi ul li{height: 160px;width: 22%;background: orange;border-radius: 10px}
 #shanshi ul li img{height: 160px;width: 100%;border-radius: 10px}
 /* 第四个页面 */
 img{display: block;width: 100%;height: 100%}

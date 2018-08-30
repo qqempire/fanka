@@ -51,14 +51,29 @@
                   <p>5</p><span class="iconfont icon-houtuimian"></span>
               </div>
             </li>
+              <router-link to='/bankcard'>
             <li>
+                    <div>
+                        <span class="iconfont icon-shiwu"></span> 我的银行卡
+                    </div>
+                    <div>
+                        <p>8</p><span class="iconfont icon-houtuimian"></span>
+                    </div>
+                </li>
+                </router-link>
+                
+              <router-link to='/dolist'>
+                
+            <li>
+                
                 <div>
-                    <span class="iconfont icon-xinxi"></span>  消息通知
+                    <span class="iconfont icon-xinxi"></span>  我的动态
                 </div>
                 <div>
                     <p>0</p><span class="iconfont icon-houtuimian"></span>
                 </div>
               </li>
+              </router-link>
               <li>
                   <div>
                       <span class="iconfont icon-shiwu"></span>  饭咖券
@@ -90,7 +105,7 @@
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
      
-    #beijing{position: relative;width: 100%;height: 200px;background: url('../../static/100.jpg') no-repeat fixed center/cover; overflow: hidden;}
+    #beijing{position: relative;width: 100%;height: 200px;background: url('../../static/100.jpg') no-repeat center/cover; overflow: hidden;}
     #beijing .set{width: 30px;height: 30px;border-radius: 50%;background: yellowgreen;float: right;text-align: right;line-height: 30px;margin: 8px}
     #beijing .set span{font-size: 30px;color: #fff}
     #beijing .head{width: 100%;height: 80px;margin-top: 40px;display: flex;justify-content: center;align-items: center}
