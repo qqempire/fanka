@@ -210,16 +210,7 @@
 		outline: none;
 		margin-bottom: 2px;
 	}
-	/*.sjh button{
-		border:none;
-		height:20px;
-		width:70px;
-		background: #FFDC14;
-		font-size:12px;
-		border-radius: 12px;
-		color:#FFFFFF;
-		
-	}*/
+	
 	.next{
 		height:40px;
 		width:180px;
