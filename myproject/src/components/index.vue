@@ -73,7 +73,7 @@
 	}
 	.sjskf{
 		height:100%;width:100%;
-		background: url(/static/r.jpg);
+		background: url(../../static/r.jpg);
 		background-size: cover;
 		background-position: center center;
 	}
