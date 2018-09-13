@@ -16,7 +16,11 @@
                 <p><span class="iconfont icon-xin">  关注：</span>  258</p>
                 <p><span class="iconfont icon-tuijiancaipu">  关注：</span>  258</p>
               </div>
+<<<<<<< HEAD
               <div @click="duih()"><img src="static/222.jpg"></div>
+=======
+              <div><img src="static/222.jpg"></div>
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
               <div><span >已关注</span></div>
            </div>
            <div class="sign">
@@ -188,11 +192,16 @@ export default {
           })
        },
        toshequ(){
+<<<<<<< HEAD
            this.$router.push("/mine")
        },
        duih(){
        		this.$router.push("/chat")
        },
+=======
+           this.$router.push("/shequ")
+       }
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
     },
   mounted() {
     this.$emit("toparent",this.str)

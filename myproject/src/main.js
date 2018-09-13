@@ -15,6 +15,7 @@ import store from "./store/store"
 import 'mint-ui/lib/style.css'
 //import "./js/jquery.js"
 import $ from "jquery"
+<<<<<<< HEAD
 import Swiper from 'swiper'; 
 import '../static/js/jquery-1.10.1.min.js';
 import '../static/js/swiper-3.3.1.jquery.min.js';
@@ -26,6 +27,8 @@ import '../static/js/swiper.animate1.0.2.min.js';
 
 
 
+=======
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 Vue.use(MintUI)
 Vue.use(Checkbix)
 Vue.use(ElementUI);

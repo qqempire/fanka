@@ -31,7 +31,10 @@ import Djpuzi_yhq from "../components/djpuzi_yhq.vue"
 import Register from "../components/register.vue"
 import Lr from "../components/lr.vue"
 import Index from "../components/index.vue"
+<<<<<<< HEAD
 import Index2 from "../components/index2.vue"
+=======
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 import Register2 from "../components/register2.vue"
 import Register3 from "../components/register3.vue"
 import Register4 from "../components/register4.vue"
@@ -75,10 +78,13 @@ export default new Router({
 			component:Index
 		},
 		{
+<<<<<<< HEAD
 			path:"/index2",
 			component:Index2
 		},
 		{
+=======
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 			path:"/register2",
 			component:Register2
 		},
@@ -221,7 +227,11 @@ export default new Router({
 
     {
       path:"/",
+<<<<<<< HEAD
       redirect:"/index2"
+=======
+      redirect:"/index"
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
     }
   ]
 })

@@ -132,8 +132,13 @@
 <style scoped="">
 	
 	#box{
+<<<<<<< HEAD
 		height:100%;
 		width: 100%;
+=======
+		height:100ch;
+		width: 100vw;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		background:url(../../static/body.jpg);
 		background-size: cover;
 		overflow: hidden;
@@ -174,7 +179,11 @@
 		margin-left:50px;
 	}
 	.sjh{
+<<<<<<< HEAD
 		height:30px;
+=======
+		height:25px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		width:210px;
 		/*margin-bottom: 25px;*/
 		margin-top:20px;
@@ -189,11 +198,18 @@
 	.sjh input{
 		border:none;
 		width:160px;
+<<<<<<< HEAD
 		height: 30px;
 		color:#FFDC14;
 		float: left;
 		outline: none;
 		font-size:16px;
+=======
+		height: 25px;
+		color:#FFDC14;
+		float: left;
+		outline: none;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 	}
 	.sjh button{
 		border:none;

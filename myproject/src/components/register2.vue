@@ -118,7 +118,11 @@
 //						console.log(data.data)
 						if(data.data.code==1){
 							localStorage.setItem("next",_this.phone)
+<<<<<<< HEAD
 							_this.$router.push("/login")
+=======
+							_this.$router.push("/home")
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 							
 						}
 					})
@@ -128,7 +132,11 @@
 			},
 			
 			back(){
+<<<<<<< HEAD
 				this.$router.push("/lr")
+=======
+				this.$router.push("/register")
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 			},
 			login(){
 				this.$router.push("/login")
@@ -187,7 +195,11 @@
 		margin-left:50px;
 	}
 	.sjh{
+<<<<<<< HEAD
 		height:30px;
+=======
+		height:25px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		width:210px;
 		margin-bottom: 25px;
 		margin-top:10px;
@@ -196,26 +208,42 @@
 	.sjh span{
 		float: left;
 		color:#FFDC14;
+<<<<<<< HEAD
 		font-size:25px;
+=======
+		font-size:20px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 	}
 	.sjh input{
 		border:none;
 		width:180px;
 		height:23px;
 		color:#FFDC14;
+<<<<<<< HEAD
 		font-size:16px;
+=======
+		font-size:12px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		outline: none;
 		margin-bottom: 2px;
 	}
 	
 	.next{
+<<<<<<< HEAD
 		height:30px;
+=======
+		height:40px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		width:180px;
 		background: #FFDC14;
 		color:#FFFFFF;
 		border:none;
 		border-radius: 20px;
+<<<<<<< HEAD
 		margin-top:4px;
+=======
+		margin-top: 10px;
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 		margin-left:60px;
 		outline: none;
 	}

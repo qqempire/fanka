@@ -32,7 +32,11 @@
 		name:"Yingyangs",
 		data:function(){
 			return{
+<<<<<<< HEAD
 				str:"设置",
+=======
+				str:"营养师",
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 				value:""
 			}
 		},

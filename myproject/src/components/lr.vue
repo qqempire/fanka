@@ -1,7 +1,11 @@
 <template>
 	<div id="box">
 		<div id="box1">
+<<<<<<< HEAD
 			<img src="static/maozi.png" />
+=======
+			<img src="static/maozi.jpg" />
+>>>>>>> cc3598f057c3ade6cf250755e463fe0164daac4d
 			<span>w e l c o m e t o f a n k a</span>
 			<div class="lr">
 				<button @click="login()" class="login">登录</button>

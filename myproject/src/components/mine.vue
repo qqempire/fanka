@@ -5,8 +5,13 @@
              <div class="set"><span class="iconfont icon-shezhi2"></span></div>
              <div class="head">
                 <div><span class="iconfont icon-xiugaiqianming"></span></div>
+
                 <div><img src="static/222.jpg"></div>
                 <div  @click="tap2()"><span class="iconfont icon-shezhi1"></span></div>
+
+                <div @click="duih()"><img src="static/222.jpg"></div>
+                <div><span class="iconfont icon-shezhi1"></span></div>
+
              </div>
              <div class="sign">
                   <div>{{username}}</div>
@@ -18,7 +23,11 @@
         </div>
          <ul id="list">
             <li>
+
                <p @click="gz()"><span class="iconfont icon-wujiaoxing"></span> 关注</p>
+
+               <p><span class="iconfont icon-wujiaoxing"></span> 关注</p>
+
                <p>35</p>
             </li>
             <li>
@@ -62,7 +71,11 @@
                   <p>5</p><span class="iconfont icon-houtuimian"></span>
               </div>
             </li>
+
             <li>
+
+            <li @click="tap2()">
+
                 <div>
                     <span class="iconfont icon-xinxi"></span>  消息通知
                 </div>
@@ -96,7 +109,11 @@
                   </div>
               </li>
        </ul>
+
 		<button @click="tc()" id="tc">退出登录</button>
+
+
+
     </div>
 </template>
   
@@ -120,6 +137,7 @@
     	tap2(){
     		this.$router.push("/yingyangs")
     	},
+
     	tc(){
 				localStorage.removeItem("next");
 				localStorage.removeItem("username");
@@ -129,6 +147,11 @@
 			this.$router.push("/friendshome")
 		},
     	
+
+    	duih(){
+    		this.$router.push("/chat")
+    	}
+
     },
        computed:{
     	username(){
@@ -173,9 +196,13 @@
     #list2 li>div:nth-of-type(2) span:nth-of-type(1){color: gray}
     #list2 li>div:nth-of-type(2){width: 25%;display: flex;justify-content: space-between;align-items: center}
     #list2 li>div:nth-of-type(2) p{width: 25px;height: 25px;background: #f2c904;border-radius: 50%;text-align: center;line-height: 25px;color: #fff;margin-right: 10px}
+
 #tc{
 		height:40px;width:100%;border:none;background: red;color:#FFFFFF;text-align: center;line-height: 40px;margin-top:10px;font-size:20px;letter-spacing: 5px;margin-bottom: 10px;
 		
 	}
+
+
+
   </style>
   
