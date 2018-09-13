@@ -8,11 +8,17 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 	state:{
 		username:"",
+		uid:"",
 		count:0
 	},
 	mutations:{
-		next(a,b){
+		next1(a,b){
 			a.username=b
+			
+		},
+		next2(a,b){
+			
+			a.uid=b
 		}
 	}
 	

@@ -81,13 +81,15 @@
                 axios({
                 	method:"get",
                     url:"http://jx.xuzhixiang.top/ap/api/cart-delete.php",
-                    params:{uid:111,pid:id}
+//                  params:{uid:_this.$store.state.uid,pid:id}
+                    params:{uid:localStorage.getItem("bbb"),pid:id}
                 })
                 .then(function(data){
                     alert(data.data.msg)
                    
 					_this.$refs.boxd[i].style.display='none';
-	            	 _this.$router.push("/gouwuche?id=111")
+	            	 _this.$router.push(`/gouwuche?id=${localStorage.getItem("bbb")} `)
+//	            	 _this.$router.push(`/gouwuche?id=${ _this.$store.state.uid} `)
 
 	            
                 })
@@ -100,12 +102,14 @@
                 axios({
                 	method:"get",
                     url:"http://jx.xuzhixiang.top/ap/api/cart-update-num.php",
-                    params:{uid:111,pid:id,pnum:_this.arr[i].pnum}
+                    params:{uid:localStorage.getItem("bbb"),pid:id,pnum:_this.arr[i].pnum}
+//                  params:{uid:_this.$store.state.uid,pid:id,pnum:_this.arr[i].pnum}
                 })
                 .then(function(data){
 //                  alert(data.data.msg)
 //                    console.log(data.data)
-   				_this.$router.push("/gouwuche?id=111")
+// 				_this.$router.push(`/gouwuche?id=${ _this.$store.state.uid} `)
+   				_this.$router.push(`/gouwuche?id=${ localStorage.getItem("bbb")} `)
                
 
                     
@@ -122,12 +126,14 @@
                  axios({
                  	method:"get",
                     url:"http://jx.xuzhixiang.top/ap/api/cart-update-num.php",
-                    params:{uid:111,pid:id,pnum:_this.arr[i].pnum}
+//                  params:{uid:_this.$store.state.uid,pid:id,pnum:_this.arr[i].pnum}
+                    params:{uid:localStorage.getItem("bbb"),pid:id,pnum:_this.arr[i].pnum}
                 })
                 .then(function(data){
 //                  alert(data.data.msg)
                     //console.log(data.data)
-                    _this.$router.push("/gouwuche?id=111")
+//                  _this.$router.push(`/gouwuche?id=${ _this.$store.state.uid} `)
+                    _this.$router.push(`/gouwuche?id=${ localStorage.getItem("bbb")} `)
                    
                 })
             },
@@ -151,13 +157,14 @@
         },
         
         mounted() {
-            var that = this;
+            var _this = this;
             axios({
 				url:"http://jx.xuzhixiang.top/ap/api/cart-list.php",
-				params:{id:111}
+//				params:{id:_this.$store.state.uid}
+				params:{id:localStorage.getItem("bbb")}
 			})
 			.then(function(data){
-                that.arr=data.data.data
+                _this.arr=data.data.data
 //              console.log(that.arr)
                 
 			})
@@ -176,7 +183,8 @@
 		 		
                 axios({
 			 		url:"http://jx.xuzhixiang.top/ap/api/cart-list.php",
-			 		params:{id:111}
+//			 		params:{id:_this.$store.state.uid}
+			 		params:{id:localStorage.getItem("bbb")}
 		 		})
 		 		.then(function(data){
                   _this.arr=data.data.data

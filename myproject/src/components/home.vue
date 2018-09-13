@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-       
+
           <mt-swipe :auto="4000"  id="lunbo" style="box-shadow: 0px 5px 10px #888888;" >
           	  <mt-swipe-item style="background: green" class="img" v-for="(item,i) in arr3">
           	  	<router-link :to="'/fooddetail/'+item.pid" >

@@ -51,7 +51,8 @@
 		data(){
 			return{
 				phone:"",
-				pass:""
+				pass:"",
+				uid:""
 			}
 		},
 		methods:{
@@ -103,14 +104,23 @@
 						}).then(function(data){
 //							console.log(data.data)
 							if(data.data.code==1){
-								localStorage.setItem("next",_this.phone)
+								_this.phone=data.data.data.username
+								_this.uid=data.data.data.id
+								console.log(_this.phone,_this.uid)
+								localStorage.setItem("aaa",_this.phone)
+								localStorage.setItem("bbb",_this.uid)
+//								console.log(localStorage.getItem("bbb",_this.uid))
+
 								_this.$router.push("/home")
+								_this.$store.commit("next1",_this.phone)
+								_this.$store.commit("next2",_this.uid)
 							}else{
 								$(".tsxx").show();
 								$(".tsxx").text("账号不存在")
 							}
 						})
-						this.$store.commit("next",this.phone)
+//						
+						
 						
 					}
 			}

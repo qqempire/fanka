@@ -97,8 +97,9 @@
 		},
 		methods:{
            tolist(){
-			   
-			   this.$router.push("/gouwuche?id=111")
+			   var _this=this
+//			   this.$router.push(`/gouwuche?id=${ _this.$store.state.uid} `)
+			   this.$router.push(`/gouwuche?id=${localStorage.getItem("bbb")} `)
 		   },
 		   tojiesuan(){
                
@@ -110,7 +111,8 @@
 				axios({
 					method:'get',
 					url:"http://jx.xuzhixiang.top/ap/api/add-product.php",
-					params:{uid:111,pid:_this.$route.params.id,pnum:1}
+//					params:{uid:_this.$store.state.uid,pid:_this.$route.params.id,pnum:1}
+					params:{uid:localStorage.getItem("bbb"),pid:_this.$route.params.id,pnum:1}
 				})
 				.then(function(data){
 							

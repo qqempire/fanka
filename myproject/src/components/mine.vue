@@ -1,5 +1,6 @@
 <template>
     <div id="wode">
+    	
         <div id="beijing">
              <div class="set"><span class="iconfont icon-shezhi2"></span></div>
              <div class="head">
@@ -45,7 +46,7 @@
             </div>
        	</router-link>
           
-          	<router-link to='/gouwuche?id=111' tag='li'>
+          	<router-link :to="'/gouwuche?id='+this.uid" tag='li'>
               <div> 
                   <span class="iconfont icon-meishi"></span>  我的购物车
               </div>
@@ -105,7 +106,8 @@
     data(){
       return {
         str:"我的",
-        msg: ""
+        msg: "",
+        uid:localStorage.getItem("bbb")
       }
     },
     mounted() {
@@ -124,7 +126,7 @@
     },
        computed:{
     	username(){
-				return localStorage.getItem("next")
+				return localStorage.getItem("aaa")
 			}
     }
   }
